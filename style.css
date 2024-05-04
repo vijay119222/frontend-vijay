@@ -1,3 +1,4 @@
+
 h1{
     color: rgb(2, 59, 59);
     text-align: center;
@@ -13,9 +14,35 @@ color: blueviolet;
 font-style: italic;
 }
 
-body{
+h3
+{
+    font-size: x-large;
+    font-style: italic;
+}
+/* Combining Selectors*/
+h1,
+h2,
+h3,
+h4,
+li{
+    font-family: sans-serif;
+}
 
-    background-color: rgb(203, 247, 138);
+h1
+{
+    font-size: medium;
+    color: black;
+}
+
+h3{
+    font-size: x-large;
+    font-style: italic;
+
+}
+.series
+{
+    font-size: 15px;
+    color: red;
 }
 
 
@@ -27,9 +54,9 @@ body{
 
 
 
-
+/*  Decendant Selector*/
 footer p{
 
-    font-size: 14px;
+    font-size: 20px;
 }
 
