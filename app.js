@@ -595,29 +595,29 @@ greet({
 
 
 // IIFE
-var firstname = "John";
+// var firstname = "John";
 
-(function (name) {
-  var greeting = "Inside IIFE: Hello";
-  console.log(greeting + " " + name);
-})(firstname); // IIFE
+// (function (name) {
+//   var greeting = "Inside IIFE: Hello";
+//   console.log(greeting + " " + name);
+// })(firstname); // IIFE
 
 
 // // IIFE
 
-// var greeting = "Hola";
+var greeting = "Hola";
 
-// (function (global, name) {
-//   var greeting = "Hello";
-//   // global.greeting = "Hello";
-//   console.log(greeting + " " + name);
+(function (global, name) {
+  var greeting = "Hello";
+  // global.greeting = "Hello";
+  console.log(greeting + " " + name);
 
-//   function greet() {
-//     console.log("Hello JavaScript");
-//   }
+  function greet() {
+    console.log("Hello JavaScript");
+  }
 
-//   greet();
-// })(window, "John"); // IIFE
+  greet();
+})(window, "John"); // IIFE
 
-// console.log(greeting);
+console.log(greeting);
 
