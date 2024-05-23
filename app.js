@@ -557,6 +557,40 @@ greet({
   lastname: "vijay",
  });
 
+//Arrays
 
+
+// var arr = [
+//   1,
+//   false,
+//   {
+//     name: "Tony",
+//     address: "111 Main St.",
+//   },
+//   function (name) {
+//     console.log(name);
+//     var greeting = "Hello ";
+//     console.log(greeting + name);
+//   },
+//   "hello",
+// ];
+
+// console.log(arr[3]);
+// console.log(arr);
+// arr[3](arr[2].name);
+// //arr[3](arr[2].name);
+
+// arrays
+
+var students = ["shabeer", "kiran", "prakash", "vijay", 2, true, {}];
+
+console.log(students);
+
+console.log(students[0]);
+console.log(students[1]);
+console.log(students[2]);
+console.log(students[3]);
+console.log(students[4]);
+console.log(students[5]);
 
 
