@@ -13,7 +13,7 @@
 
 // fullName();  / funtion calling
 
-//object declaration
+// object declaration
 
 // var address={
 //     street:'Main',
@@ -27,7 +27,7 @@
 
 // console.log(address);
 
-//Execution context: creation and Hoisting
+// Execution context: creation and Hoisting
 
 // var a= 'hello world!';
 
@@ -72,7 +72,7 @@
 
 // a='hello world';
 
-//Outer Environment 
+// Outer Environment 
 
 // function b(){
 //     console.log('called b');
@@ -93,7 +93,7 @@
 
 // a='hello world';
 
-//undefined
+// undefined
 
 // var a;
 // console.log(a);
@@ -137,7 +137,7 @@
 //     console.log('b is defined');
 // }
 
-//code execution
+// // code execution
 
 // function b(){
 //     console.log('called b');
@@ -151,7 +151,7 @@
 
 // console.log(a);
 
-//Function Invocastion and execution stack
+// // Function Invocastion and execution stack
 
 // function b(){
 
@@ -204,13 +204,13 @@
 // console.log(myVar);
 
 
-//Data Types : Primitive Data Types, Reference Types
+// // Data Types : Primitive Data Types, Reference Types
 
-//Primitive / Value Types  : String , Number , Boolean , undefined, Null, Symbol
+// // Primitive / Value Types  : String , Number , Boolean , undefined, Null, Symbol
 
-//Reference Types: Objects , Arrays , Functions
+// // Reference Types: Objects , Arrays , Functions
 
-//JavaScript is  Dynamic Language
+// // JavaScript is  Dynamic Language
 
 // String;
 
@@ -345,40 +345,192 @@
 // console.log(course);
 // console.log(xcourse);
 
-//How to create objectby using using Object Literal Syntax:
+// How to create objectby using using Object Literal Syntax:
 
-//var objectName={};
+// var objectName={};
 
-//How to create object by using new object keyword:
+// How to create object by using new object keyword:
 
-var person = new Object();
+// var person = new Object();
 
-console.log(person);
+// console.log(person);
 
-person.firstname='shaik';
-person.lastname='shabbeer';
+// person.firstname='vijay';
+// person.lastname='prakash';
 
-console.log(person);
+// console.log(person);
 
-var firstNameProperty = 'firstname';
+// var firstNameProperty = 'firstname';
 
-var lastNameProperty='lastname';
+// var lastNameProperty='lastname';
 
 
-console.log(person[firstNameProperty]);
-console.log(person[lastNameProperty]);
+// console.log(person[firstNameProperty]);
+// console.log(person[lastNameProperty]);
 
-console.log(person.firstname);
-console.log(person.lastname);
+// console.log(person.firstname);
+// console.log(person.lastname);
 
-person.address =new Object();
-person.address.street='b c colony';
-person.address.city='chennekothapalli';
-person.address.state='andrapradesh';
+// person.address =new Object();
+// person.address.street='b c colony';
+// person.address.city='chennekothapalli';
+// person.address.state='andrapradesh';
 
-console.log(person.address.street);
-console.log(person.address.city);
-console.log(person["address"]['state']);
+// console.log(person.address.street);
+// console.log(person.address.city);
+// console.log(person["address"]['state']);
+
+// By Using Object Literals
+
+// var Tony = {
+//   firstname: "vijay",
+//   lastname: "prakash",
+//   address: {
+//     street: "b c colony",
+//     city: "chennekothapalli ",
+//     state: "Andrapradesh",
+//   },
+// };
+
+// function greet(a) {
+//   console.log(a);
+//   console.log("Hi " + a.firstname);
+// }
+
+// // greet(Tony);
+
+// // greet({
+// //   firstname: "Bandaru",
+// //   lastname: "vijay",
+// // });
+// // let kiran = new Object();
+// // console.log(kiran);
+
+// // kiran.firstname = "gadikota";
+// // kiran.lastname = "Kumar";
+// // console.log(kiran);
+// greet(vijay = {
+//   address: "chennekothapalli",
+// },
+// );
+
+// Tony.address2 = {
+//   street: "sivalayam veedi",
+// };
+
+// console.log(Tony);
+
+// greet({
+//   firstname: "Sivakumar",
+//   lastname: "Kalisetty",
+// });
+
+// // Functions are Objects
+
+// // function greet() {
+// //   console.log("hi");
+// // }
+
+// // greet.language = "english";
+// // console.log(greet.language);
+
+// // // Function Statements and Expressions
+
+// // greet();
+
+// // function greet() {
+// //   console.log("hi");
+// // }
+
+// // console.log(anonymousGreet);
+
+// // //anonymousGreet();
+
+// // var anonymousGreet = function () {
+// //   console.log("hi anonymous");
+// // };
+
+// // console.log(anonymousGreet);
+
+// // anonymousGreet();
+
+// // function log(a) {
+// //   a();
+// // }
+
+// // log(function b() {
+// //   console.log("Hello guys");
+// // });
+
+// // // log(function b() {
+// // //   console.log("Calling function nbhsdhjsdjh");
+// // // });
+
+// // // Call By Value and Call Reference
+
+// by value (primitives)
+// var a = 3;
+// var b;
+// console.log(a);
+// console.log(b);
+// b = a;
+// a = 2;
+
+// console.log(a);
+// console.log(b);
+
+// // by reference (all objects (including functions))
+// var c = { greeting: "hi" };
+// var d;
+// console.log(c);
+// console.log(d);
+// d = c;
+// console.log(d);
+// c.greeting = "hello"; // mutate
+
+// console.log(c);
+// console.log(d);
+
+// // by reference (even as parameters)
+// function changeGreeting(obj) {
+//   obj.greeting = "Hola"; // mutate
+// }
+
+// changeGreeting(d);
+// console.log(c);
+// console.log(d);
+
+// // equals operator sets up new memory space (new address)
+// c = { greeting: "howdy" };
+// console.log(c);
+// console.log(d);
+
+// // UnderStanding of this keyword
+
+// function hello() {
+//   console.log(this);
+//   this.newvariable = "hello";
+// }
+
+// var hola = function () {
+//   console.log(this);
+// };
+
+// hello();
+
+// console.log(this.newvariable); // not good!
+
+// hola();
+
+// var c = {
+
+//   name: "The c object",
+//   log: function () {
+//     console.log(this);
+//   },
+// };
+
+// c.log();
 
 //By Using Object Literals
 
@@ -395,133 +547,15 @@ var Tony = {
 function greet(a) {
   console.log(a);
   console.log("Hi " + a.firstname);
+  console.log("hello" + a.lastname);
 }
 
 greet(Tony);
 
 greet({
   firstname: "Bandaru",
-  lastname: "vijay",
-});
-
-Tony.address2 = {
-  street: "sivalayam veedi",
-};
-
-console.log(Tony);
-
-greet({
-  firstname: "Sivakumar",
-  lastname: "Kalisetty",
-});
-
-// Functions are Objects
-
-function greet() {
-  console.log("hi");
-}
-
-greet.language = "english";
-console.log(greet.language);
-
-// Function Statements and Expressions
-
-greet();
-
-function greet() {
-  console.log("hi");
-}
-
-console.log(anonymousGreet);
-
-//anonymousGreet();
-
-var anonymousGreet = function () {
-  console.log("hi anonymous");
-};
-
-console.log(anonymousGreet);
-
-anonymousGreet();
-
-function log(a) {
-  a();
-}
-
-log(function b() {
-  console.log("Hello guys");
-});
-
-// log(function b() {
-//   console.log("Calling function nbhsdhjsdjh");
-// });
-
-// Call By Value and Call Reference
-
-// by value (primitives)
-var a = 3;
-var b;
-console.log(a);
-console.log(b);
-b = a;
-a = 2;
-
-console.log(a);
-console.log(b);
-
-// by reference (all objects (including functions))
-var c = { greeting: "hi" };
-var d;
-
-d = c;
-c.greeting = "hello"; // mutate
-
-console.log(c);
-console.log(d);
-
-// by reference (even as parameters)
-function changeGreeting(obj) {
-  obj.greeting = "Hola"; // mutate
-}
-
-changeGreeting(d);
-console.log(c);
-console.log(d);
-
-// equals operator sets up new memory space (new address)
-c = { greeting: "howdy" };
-console.log(c);
-console.log(d);
-
-// UnderStanding of this keyword
-
-function hello() {
-  console.log(this);
-  this.newvariable = "hello";
-}
-
-var hola = function () {
-  console.log(this);
-};
-
-hello();
-
-console.log(this.newvariable); // not good!
-
-hola();
-
-var c = {
-  name: "The c object",
-  log: function () {
-    console.log(this);
-  },
-};
-
-c.log();
-
-
-
-
+  lastname: "vijay",
+ });
 
 
 
