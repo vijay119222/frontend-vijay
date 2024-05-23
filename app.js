@@ -582,15 +582,42 @@ greet({
 
 // arrays
 
-var students = ["shabeer", "kiran", "prakash", "vijay", 2, true, {}];
+// var students = ["shabeer", "kiran", "prakash", "vijay", 2, true, {}];
 
-console.log(students);
+// console.log(students);
 
-console.log(students[0]);
-console.log(students[1]);
-console.log(students[2]);
-console.log(students[3]);
-console.log(students[4]);
-console.log(students[5]);
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[2]);
+// console.log(students[3]);
+// console.log(students[4]);
+// console.log(students[5]);
 
+
+// IIFE
+var firstname = "John";
+
+(function (name) {
+  var greeting = "Inside IIFE: Hello";
+  console.log(greeting + " " + name);
+})(firstname); // IIFE
+
+
+// // IIFE
+
+// var greeting = "Hola";
+
+// (function (global, name) {
+//   var greeting = "Hello";
+//   // global.greeting = "Hello";
+//   console.log(greeting + " " + name);
+
+//   function greet() {
+//     console.log("Hello JavaScript");
+//   }
+
+//   greet();
+// })(window, "John"); // IIFE
+
+// console.log(greeting);
 
